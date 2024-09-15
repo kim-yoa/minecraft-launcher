@@ -1,13 +1,13 @@
 {
   "name": "uwalauncher",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "productName": "유와런쳐",
   "description": "유와서버 런쳐",
   "author": "YOA (https://chzzk.kimyoa.com/)",
   "license": "UNLICENSED",
   "homepage": "https://discord.gg/g637X3M4WB",
   "bugs": {
-    "url": "https://discord.gg/g637X3M4WB"
+    "url": "https://github.com/kim-yoa/uwa-launcher"
   },
   "private": true,
   "main": "index.js",
@@ -46,6 +46,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/leehohyung0117/uwa-launcher.git"
+    "url": "git+https://github.com/kim-yoa/uwa-launcher.git"
   }
 }
