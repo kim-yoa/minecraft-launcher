@@ -10,10 +10,11 @@ const {ipcRenderer, shell, webFrame} = require('electron')
 const remote                         = require('@electron/remote')
 const isDev                          = require('./assets/js/isdev')
 const { LoggerUtil }                 = require('helios-core')
-const Lang                           = require('./assets/js/langloader')
+const LoggerUtil1                    = require('./assets/js/loggerutil')
 
-const loggerUICore             = LoggerUtil.getLogger('UICore')
-const loggerAutoUpdater        = LoggerUtil.getLogger('AutoUpdater')
+const loggerUICore             = LoggerUtil1('%c[UICore]', 'color: #000668; font-weight: bold')
+const loggerAutoUpdater        = LoggerUtil1('%c[AutoUpdater]', 'color: #000668; font-weight: bold')
+const loggerAutoUpdaterSuccess = LoggerUtil1('%c[AutoUpdater]', 'color: #209b07; font-weight: bold')
 
 // Log deprecation and process warnings.
 process.traceProcessWarnings = true
@@ -42,22 +43,22 @@ if(!isDev){
     ipcRenderer.on('autoUpdateNotification', (event, arg, info) => {
         switch(arg){
             case 'checking-for-update':
-                loggerAutoUpdater.info('Checking for update..')
-                settingsUpdateButtonStatus(Lang.queryJS('uicore.autoUpdate.checkingForUpdateButton'), true)
+                loggerAutoUpdater.log('Checking for update..')
+                settingsUpdateButtonStatus('Checking for Updates..', true)
                 break
             case 'update-available':
-                loggerAutoUpdater.info('New update available', info.version)
+                loggerAutoUpdaterSuccess.log('New update available', info.version)
                 
                 if(process.platform === 'darwin'){
-                    info.darwindownload = `https://github.com/dscalzi/HeliosLauncher/releases/download/v${info.version}/Helios-Launcher-setup-${info.version}${process.arch === 'arm64' ? '-arm64' : '-x64'}.dmg`
+                    info.darwindownload = `https://github.com/dscalzi/HeliosLauncher/releases/download/v${info.version}/Helios-Launcher-setup.dmg`
                     showUpdateUI(info)
                 }
                 
                 populateSettingsUpdateInformation(info)
                 break
             case 'update-downloaded':
-                loggerAutoUpdater.info('Update ' + info.version + ' ready to be installed.')
-                settingsUpdateButtonStatus(Lang.queryJS('uicore.autoUpdate.installNowButton'), false, () => {
+                loggerAutoUpdaterSuccess.log('Update ' + info.version + ' ready to be installed.')
+                settingsUpdateButtonStatus('Install Now', false, () => {
                     if(!isDev){
                         ipcRenderer.send('autoUpdateAction', 'installUpdateNow')
                     }
@@ -65,8 +66,8 @@ if(!isDev){
                 showUpdateUI(info)
                 break
             case 'update-not-available':
-                loggerAutoUpdater.info('No new update found.')
-                settingsUpdateButtonStatus(Lang.queryJS('uicore.autoUpdate.checkForUpdatesButton'))
+                loggerAutoUpdater.log('No new update found.')
+                settingsUpdateButtonStatus('Check for Updates')
                 break
             case 'ready':
                 updateCheckListener = setInterval(() => {
@@ -77,9 +78,9 @@ if(!isDev){
             case 'realerror':
                 if(info != null && info.code != null){
                     if(info.code === 'ERR_UPDATER_INVALID_RELEASE_FEED'){
-                        loggerAutoUpdater.info('No suitable releases found.')
+                        loggerAutoUpdater.log('No suitable releases found.')
                     } else if(info.code === 'ERR_XML_MISSED_ELEMENT'){
-                        loggerAutoUpdater.info('No releases found.')
+                        loggerAutoUpdater.log('No releases found.')
                     } else {
                         loggerAutoUpdater.error('Error during update check..', info)
                         loggerAutoUpdater.debug('Error Code:', info.code)
@@ -87,7 +88,7 @@ if(!isDev){
                 }
                 break
             default:
-                loggerAutoUpdater.info('Unknown argument', arg)
+                loggerAutoUpdater.log('Unknown argument', arg)
                 break
         }
     })
@@ -130,12 +131,12 @@ function showUpdateUI(info){
 
 /* jQuery Example
 $(function(){
-    loggerUICore.info('UICore Initialized');
+    loggerUICore.log('UICore Initialized');
 })*/
 
 document.addEventListener('readystatechange', function () {
     if (document.readyState === 'interactive'){
-        loggerUICore.info('UICore Initializing..')
+        loggerUICore.log('UICore Initializing..')
 
         // Bind close button.
         Array.from(document.getElementsByClassName('fCb')).map((val) => {
