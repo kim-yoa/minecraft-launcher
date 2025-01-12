@@ -1,0 +1,21 @@
+{
+  "$schema": "file:///D:/git/minecraft-launcher/nebula/workspace/schemas/ServerMetaSchema.schema.json",
+  "meta": {
+    "version": "1.0.0",
+    "name": "Somyang (Minecraft 1.21.3)",
+    "description": "Somyang Running Minecraft 1.21.3 (Fabric v0.16.10)",
+    "icon": "How to set the server icon: http://server.kimyoa.com/somyang/somyang.png",
+    "address": "localhost:25565",
+    "discord": {
+      "shortId": "<FILL IN OR REMOVE DISCORD OBJECT>",
+      "largeImageText": "<FILL IN OR REMOVE DISCORD OBJECT>",
+      "largeImageKey": "<FILL IN OR REMOVE DISCORD OBJECT>"
+    },
+    "mainServer": true,
+    "autoconnect": false
+  },
+  "fabric": {
+    "version": "0.16.10"
+  },
+  "untrackedFiles": []
+}

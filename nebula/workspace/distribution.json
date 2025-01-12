@@ -1,0 +1,799 @@
+{
+  "version": "1.0.0",
+  "rss": "<LINK TO RSS FEED>",
+  "discord": {
+    "clientId": "<FILL IN OR REMOVE DISCORD OBJECT>",
+    "smallImageText": "<FILL IN OR REMOVE DISCORD OBJECT>",
+    "smallImageKey": "<FILL IN OR REMOVE DISCORD OBJECT>"
+  },
+  "servers": [
+    {
+      "id": "Somyang-1.21.3",
+      "name": "Somyang (Minecraft 1.21.3)",
+      "description": "Somyang Running Minecraft 1.21.3 (Fabric v0.16.10)",
+      "icon": "http://server.kimyoa.com/somyang/somyang.png",
+      "version": "1.0.0",
+      "address": "localhost:25565",
+      "minecraftVersion": "1.21.3",
+      "discord": {
+        "shortId": "<FILL IN OR REMOVE DISCORD OBJECT>",
+        "largeImageText": "<FILL IN OR REMOVE DISCORD OBJECT>",
+        "largeImageKey": "<FILL IN OR REMOVE DISCORD OBJECT>"
+      },
+      "mainServer": true,
+      "autoconnect": false,
+      "modules": [
+        {
+          "id": "net.fabricmc:fabric-loader:0.16.10",
+          "name": "Fabric (fabric-loader)",
+          "type": "Fabric",
+          "artifact": {
+            "size": 1387408,
+            "MD5": "239d59118dec4324672b3d9e9d75efef",
+            "url": "http://server.kimyoa.com/somyang/repo/lib/net/fabricmc/fabric-loader/0.16.10/fabric-loader-0.16.10.jar"
+          },
+          "subModules": [
+            {
+              "id": "1.21.3-fabric-0.16.10",
+              "name": "Fabric (version.json)",
+              "type": "VersionManifest",
+              "artifact": {
+                "size": 2859,
+                "MD5": "ab0b543775dda841711e8d3edc6de2c5",
+                "url": "http://server.kimyoa.com/somyang/repo/versions/1.21.3-fabric-0.16.10/1.21.3-fabric-0.16.10.json"
+              }
+            },
+            {
+              "id": "org.ow2.asm:asm:9.7.1",
+              "name": "Fabric (asm)",
+              "type": "Library",
+              "artifact": {
+                "size": 126093,
+                "MD5": "e2cdd32d198ad31427d298eee9d39d8d",
+                "url": "http://server.kimyoa.com/somyang/repo/lib/org/ow2/asm/asm/9.7.1/asm-9.7.1.jar"
+              }
+            },
+            {
+              "id": "org.ow2.asm:asm-analysis:9.7.1",
+              "name": "Fabric (asm-analysis)",
+              "type": "Library",
+              "artifact": {
+                "size": 35126,
+                "MD5": "4cd9e7178dfb85371bba3077e40cd514",
+                "url": "http://server.kimyoa.com/somyang/repo/lib/org/ow2/asm/asm-analysis/9.7.1/asm-analysis-9.7.1.jar"
+              }
+            },
+            {
+              "id": "org.ow2.asm:asm-commons:9.7.1",
+              "name": "Fabric (asm-commons)",
+              "type": "Library",
+              "artifact": {
+                "size": 73459,
+                "MD5": "8344aea3c8b7d707e9d35a62710e77c9",
+                "url": "http://server.kimyoa.com/somyang/repo/lib/org/ow2/asm/asm-commons/9.7.1/asm-commons-9.7.1.jar"
+              }
+            },
+            {
+              "id": "org.ow2.asm:asm-tree:9.7.1",
+              "name": "Fabric (asm-tree)",
+              "type": "Library",
+              "artifact": {
+                "size": 51939,
+                "MD5": "e85029f613b6469989cc7cf53fe06b74",
+                "url": "http://server.kimyoa.com/somyang/repo/lib/org/ow2/asm/asm-tree/9.7.1/asm-tree-9.7.1.jar"
+              }
+            },
+            {
+              "id": "org.ow2.asm:asm-util:9.7.1",
+              "name": "Fabric (asm-util)",
+              "type": "Library",
+              "artifact": {
+                "size": 94519,
+                "MD5": "36d373a9cd6cad9b35db9f984c6b4bbb",
+                "url": "http://server.kimyoa.com/somyang/repo/lib/org/ow2/asm/asm-util/9.7.1/asm-util-9.7.1.jar"
+              }
+            },
+            {
+              "id": "net.fabricmc:sponge-mixin:0.15.4+mixin.0.8.7",
+              "name": "Fabric (sponge-mixin)",
+              "type": "Library",
+              "artifact": {
+                "size": 1494834,
+                "MD5": "991ca8be2c408fe19eb64014d8a18243",
+                "url": "http://server.kimyoa.com/somyang/repo/lib/net/fabricmc/sponge-mixin/0.15.4+mixin.0.8.7/sponge-mixin-0.15.4+mixin.0.8.7.jar"
+              }
+            },
+            {
+              "id": "net.fabricmc:intermediary:1.21.3",
+              "name": "Fabric (intermediary)",
+              "type": "Library",
+              "artifact": {
+                "size": 693060,
+                "MD5": "bc6edae1133bf23325898da22d9eff90",
+                "url": "http://server.kimyoa.com/somyang/repo/lib/net/fabricmc/intermediary/1.21.3/intermediary-1.21.3.jar"
+              }
+            }
+          ]
+        },
+        {
+          "id": "eu.midnightdust:blur:5.0.1@jar",
+          "name": "Blur+",
+          "type": "FabricMod",
+          "artifact": {
+            "size": 92483,
+            "url": "http://server.kimyoa.com/somyang/servers/Somyang-1.21.3/fabricmods/required/blur-fabric-5.0.1+1.21.3.jar",
+            "MD5": "d0b063efd9ca5391d62a5fb88b8a2be2"
+          }
+        },
+        {
+          "id": "moe.caramel.chat:caramelchat:1.2.0@jar",
+          "name": "CaramelChat",
+          "type": "FabricMod",
+          "artifact": {
+            "size": 163227,
+            "url": "http://server.kimyoa.com/somyang/servers/Somyang-1.21.3/fabricmods/optionaloff/caramelChat-mc1.20.4-fabric-1.2.0.jar",
+            "MD5": "59afda01c0be221d5e692e97dd2b77bf"
+          },
+          "required": {
+            "value": false,
+            "def": false
+          }
+        },
+        {
+          "id": "dzwdz.chat_heads:chat_heads:0.13.7@jar",
+          "name": "Chat Heads",
+          "type": "FabricMod",
+          "artifact": {
+            "size": 76507,
+            "url": "http://server.kimyoa.com/somyang/servers/Somyang-1.21.3/fabricmods/required/chat_heads-0.13.7-fabric-1.21.2.jar",
+            "MD5": "1b81136ae317c4c357d56d9467e70fbb"
+          }
+        },
+        {
+          "id": "com.ezzenix:chatanimation:1.0.6@jar",
+          "name": "ChatAnimation",
+          "type": "FabricMod",
+          "artifact": {
+            "size": 553941,
+            "url": "http://server.kimyoa.com/somyang/servers/Somyang-1.21.3/fabricmods/required/chatanimation-1.0.6.jar",
+            "MD5": "2f2f27d257421c40ef46fd598917e5aa"
+          }
+        },
+        {
+          "id": "com.wulian:chatimpressiveanimation:1.2.1+mc1.21.4@jar",
+          "name": "Chat Impressive Animation",
+          "type": "FabricMod",
+          "artifact": {
+            "size": 106156,
+            "url": "http://server.kimyoa.com/somyang/servers/Somyang-1.21.3/fabricmods/required/ChatImpressiveAnimation-fabric-1.2.1+mc1.21.4.jar",
+            "MD5": "3af4a478a3d6408cdfadaf7173bf31e6"
+          }
+        },
+        {
+          "id": "me.shedaniel.autoconfig.example:cloth-config:16.0.143@jar",
+          "name": "Cloth Config v16",
+          "type": "FabricMod",
+          "artifact": {
+            "size": 1150490,
+            "url": "http://server.kimyoa.com/somyang/servers/Somyang-1.21.3/fabricmods/required/cloth-config-16.0.143-fabric.jar",
+            "MD5": "780accf5d57c7b3cd3a40dc42fd3daea"
+          }
+        },
+        {
+          "id": "me.pepperbell:continuity:3.0.0+1.21.3@jar",
+          "name": "Continuity",
+          "type": "FabricMod",
+          "artifact": {
+            "size": 1003345,
+            "url": "http://server.kimyoa.com/somyang/servers/Somyang-1.21.3/fabricmods/required/continuity-3.0.0+1.21.3.jar",
+            "MD5": "b7d4df35d27fdc3ffc6598f73ebb06c3"
+          }
+        },
+        {
+          "id": "generated.fabricmod:customwindowtitle_multiloader:1.4.0@jar",
+          "name": "Custom Window Title (Multiloader)",
+          "type": "FabricMod",
+          "artifact": {
+            "size": 24449,
+            "url": "http://server.kimyoa.com/somyang/servers/Somyang-1.21.3/fabricmods/required/CustomWindowTitle-1.21+v1.4.0.jar",
+            "MD5": "20195b0813a5bd6d97eb5b64524c176c"
+          }
+        },
+        {
+          "id": "traben.entity_model_features:entity_model_features:2.4.1@jar",
+          "name": "Entity Model Features",
+          "type": "FabricMod",
+          "artifact": {
+            "size": 447963,
+            "url": "http://server.kimyoa.com/somyang/servers/Somyang-1.21.3/fabricmods/required/entity_model_features_fabric_1.21.3-2.4.1.jar",
+            "MD5": "fafcbf364f82570f04a49cd0a2b6e2de"
+          }
+        },
+        {
+          "id": "traben.entity_texture_features:entity_texture_features:6.2.9@jar",
+          "name": "Entity Texture Features",
+          "type": "FabricMod",
+          "artifact": {
+            "size": 649752,
+            "url": "http://server.kimyoa.com/somyang/servers/Somyang-1.21.3/fabricmods/required/entity_texture_features_fabric_1.21.3-6.2.9.jar",
+            "MD5": "cfa9ce2e98d1e667d9d53b73e1f6f391"
+          }
+        },
+        {
+          "id": "dev.tr7zw:entityculling:1.7.2@jar",
+          "name": "EntityCulling",
+          "type": "FabricMod",
+          "artifact": {
+            "size": 67916,
+            "url": "http://server.kimyoa.com/somyang/servers/Somyang-1.21.3/fabricmods/required/entityculling-fabric-1.7.2-mc1.21.3.jar",
+            "MD5": "36a3da61cd6ae531a0a0f4904a312af9"
+          }
+        },
+        {
+          "id": "generated.fabricmod:fabric-api:0.114.0+1.21.3@jar",
+          "name": "Fabric API",
+          "type": "FabricMod",
+          "artifact": {
+            "size": 2380570,
+            "url": "http://server.kimyoa.com/somyang/servers/Somyang-1.21.3/fabricmods/required/fabric-api-0.114.0+1.21.3.jar",
+            "MD5": "ff212ec689a11a0b4428b293013b7f4d"
+          }
+        },
+        {
+          "id": "generated.fabricmod:fabric-language-kotlin:1.13.0+kotlin.2.1.0@jar",
+          "name": "Fabric Language Kotlin",
+          "type": "FabricMod",
+          "artifact": {
+            "size": 7089756,
+            "url": "http://server.kimyoa.com/somyang/servers/Somyang-1.21.3/fabricmods/required/fabric-language-kotlin-1.13.0+kotlin.2.1.0.jar",
+            "MD5": "f6623d8c006095c4e08323f084e6c00e"
+          }
+        },
+        {
+          "id": "randommcsomethin.fallingleaves:fallingleaves:1.16.4@jar",
+          "name": "Falling Leaves",
+          "type": "FabricMod",
+          "artifact": {
+            "size": 167572,
+            "url": "http://server.kimyoa.com/somyang/servers/Somyang-1.21.3/fabricmods/required/fallingleaves-1.16.4+1.21.2.jar",
+            "MD5": "7055aa03ec94aaf063b88b9f975f6c17"
+          }
+        },
+        {
+          "id": "me.fallenbreath:fastipping:1.0.5@jar",
+          "name": "Fast IP Ping",
+          "type": "FabricMod",
+          "artifact": {
+            "size": 10582,
+            "url": "http://server.kimyoa.com/somyang/servers/Somyang-1.21.3/fabricmods/required/fast-ip-ping-v1.0.5-mc1.21.1-fabric.jar",
+            "MD5": "49b4e5543017e408b929f3b1bdfb4c2b"
+          }
+        },
+        {
+          "id": "generated.fabricmod:ferritecore:7.1.0-hotfix@jar",
+          "name": "FerriteCore",
+          "type": "FabricMod",
+          "artifact": {
+            "size": 107124,
+            "url": "http://server.kimyoa.com/somyang/servers/Somyang-1.21.3/fabricmods/required/ferritecore-7.1.0-hotfix-fabric.jar",
+            "MD5": "d2943c193f9aad6b53da202b4a58b803"
+          }
+        },
+        {
+          "id": "generated.fabricmod:immediatelyfast:1.3.3+1.21.3@jar",
+          "name": "ImmediatelyFast",
+          "type": "FabricMod",
+          "artifact": {
+            "size": 211823,
+            "url": "http://server.kimyoa.com/somyang/servers/Somyang-1.21.3/fabricmods/required/ImmediatelyFast-Fabric-1.3.3+1.21.3.jar",
+            "MD5": "464abfc52398f1b7884f1f6c7be6336c"
+          }
+        },
+        {
+          "id": "generated.fabricmod:iris:1.8.1+mc1.21.3@jar",
+          "name": "Iris",
+          "type": "FabricMod",
+          "artifact": {
+            "size": 2663618,
+            "url": "http://server.kimyoa.com/somyang/servers/Somyang-1.21.3/fabricmods/required/iris-fabric-1.8.1+mc1.21.3.jar",
+            "MD5": "1987e6badf2a780cac8d73a75613b2ae"
+          }
+        },
+        {
+          "id": "com.hyfata.najoan:koreanpatch:1.6.11+mc1.21.3@jar",
+          "name": "Korean Patch",
+          "type": "FabricMod",
+          "artifact": {
+            "size": 470386,
+            "url": "http://server.kimyoa.com/somyang/servers/Somyang-1.21.3/fabricmods/optionalon/koreanpatch-fabric-1.6.11+mc1.21.3.jar",
+            "MD5": "64497e2f95db66c3628c52e012650cfa"
+          },
+          "required": {
+            "value": false
+          }
+        },
+        {
+          "id": "me.steinborn.krypton.mod.shared:krypton:0.2.8@jar",
+          "name": "Krypton",
+          "type": "FabricMod",
+          "artifact": {
+            "size": 161045,
+            "url": "http://server.kimyoa.com/somyang/servers/Somyang-1.21.3/fabricmods/required/krypton-0.2.8.jar",
+            "MD5": "9ba3d734dac0e59deb4721f2f23c65ad"
+          }
+        },
+        {
+          "id": "dev.lambdaurora:lambdynlights:3.2.4+1.21.3@jar",
+          "name": "LambDynamicLights",
+          "type": "FabricMod",
+          "artifact": {
+            "size": 849827,
+            "url": "http://server.kimyoa.com/somyang/servers/Somyang-1.21.3/fabricmods/required/lambdynamiclights-3.2.4+1.21.3.jar",
+            "MD5": "34085293999e8bbda6fc1a2cc6b1e7f1"
+          }
+        },
+        {
+          "id": "generated.fabricmod:languagereload:1.7.2+1.21.3@jar",
+          "name": "Language Reload",
+          "type": "FabricMod",
+          "artifact": {
+            "size": 74652,
+            "url": "http://server.kimyoa.com/somyang/servers/Somyang-1.21.3/fabricmods/required/language-reload-1.7.2+1.21.3.jar",
+            "MD5": "70216fae90486b4dd529d0bbe9621da9"
+          }
+        },
+        {
+          "id": "net.caffeinemc.mods:lithium:0.14.3+mc1.21.3@jar",
+          "name": "Lithium",
+          "type": "FabricMod",
+          "artifact": {
+            "size": 739558,
+            "url": "http://server.kimyoa.com/somyang/servers/Somyang-1.21.3/fabricmods/required/lithium-fabric-0.14.3+mc1.21.3.jar",
+            "MD5": "514540922ec0d62d1f20aecbc96dcbd5"
+          }
+        },
+        {
+          "id": "net.mehvahdjukaar:modelfix:1.21.3-1.10@jar",
+          "name": "Model Gap Fix",
+          "type": "FabricMod",
+          "artifact": {
+            "size": 66412,
+            "url": "http://server.kimyoa.com/somyang/servers/Somyang-1.21.3/fabricmods/required/modelfix-1.21.3-1.10-fabric.jar",
+            "MD5": "8e44b12c5c24a4303f45e73e40c162f2"
+          }
+        },
+        {
+          "id": "com.terraformersmc:modmenu:12.0.0@jar",
+          "name": "Mod Menu",
+          "type": "FabricMod",
+          "artifact": {
+            "size": 986258,
+            "url": "http://server.kimyoa.com/somyang/servers/Somyang-1.21.3/fabricmods/required/modmenu-12.0.0.jar",
+            "MD5": "4a2fd6b4a42e642edb7106c7ce3cab31"
+          }
+        },
+        {
+          "id": "ca.fxco:moreculling:1.1.0@jar",
+          "name": "More Culling",
+          "type": "FabricMod",
+          "artifact": {
+            "size": 328652,
+            "url": "http://server.kimyoa.com/somyang/servers/Somyang-1.21.3/fabricmods/required/moreculling-fabric-1.21.3-1.1.0.jar",
+            "MD5": "c597e7c3a127daf2e8895c6d6d20c8ea"
+          }
+        },
+        {
+          "id": "dev.tr7zw:notenoughanimations:1.9.0@jar",
+          "name": "NotEnoughAnimations",
+          "type": "FabricMod",
+          "artifact": {
+            "size": 440942,
+            "url": "http://server.kimyoa.com/somyang/servers/Somyang-1.21.3/fabricmods/required/notenoughanimations-fabric-1.9.0-mc1.21.3.jar",
+            "MD5": "1b000e1150ba2dbc0c0bc5b433e596a1"
+          }
+        },
+        {
+          "id": "generated.fabricmod:placeholder-api:2.5.1+1.21.3@jar",
+          "name": "Placeholder API",
+          "type": "FabricMod",
+          "artifact": {
+            "size": 237295,
+            "url": "http://server.kimyoa.com/somyang/servers/Somyang-1.21.3/fabricmods/required/placeholder-api-2.5.1+1.21.3.jar",
+            "MD5": "902c9f31bfb9dce3ab100092c4b13448"
+          }
+        },
+        {
+          "id": "generated.fabricmod:reeses-sodium-options:1.8.0+mc1.21.3@jar",
+          "name": "Reese's Sodium Options",
+          "type": "FabricMod",
+          "artifact": {
+            "size": 80972,
+            "url": "http://server.kimyoa.com/somyang/servers/Somyang-1.21.3/fabricmods/required/reeses-sodium-options-fabric-1.8.0+mc1.21.3.jar",
+            "MD5": "1d9261cac0c95cfc77ce8029c13ae0df"
+          }
+        },
+        {
+          "id": "com.misterpemodder:shulkerboxtooltip:5.2.1+1.21.3@jar",
+          "name": "Shulker Box Tooltip",
+          "type": "FabricMod",
+          "artifact": {
+            "size": 374020,
+            "url": "http://server.kimyoa.com/somyang/servers/Somyang-1.21.3/fabricmods/required/shulkerboxtooltip-fabric-5.2.1+1.21.3.jar",
+            "MD5": "168d40b40936a28eebb994f4ed076159"
+          }
+        },
+        {
+          "id": "dev.tr7zw.skinlayers:skinlayers3d:1.7.4@jar",
+          "name": "3d-Skin-Layers",
+          "type": "FabricMod",
+          "artifact": {
+            "size": 472242,
+            "url": "http://server.kimyoa.com/somyang/servers/Somyang-1.21.3/fabricmods/required/skinlayers3d-fabric-1.7.4-mc1.21.3.jar",
+            "MD5": "465bfa90b66f38e0672437e8e3501f4a"
+          }
+        },
+        {
+          "id": "generated.fabricmod:sodium-extra:0.6.0+mc1.21.3@jar",
+          "name": "Sodium Extra",
+          "type": "FabricMod",
+          "artifact": {
+            "size": 360186,
+            "url": "http://server.kimyoa.com/somyang/servers/Somyang-1.21.3/fabricmods/required/sodium-extra-fabric-0.6.0+mc1.21.3.jar",
+            "MD5": "e2e6a53e63bda80ea601a724b5b8e049"
+          }
+        },
+        {
+          "id": "net.caffeinemc.mods:sodium:0.6.5+mc1.21.3@jar",
+          "name": "Sodium",
+          "type": "FabricMod",
+          "artifact": {
+            "size": 1288089,
+            "url": "http://server.kimyoa.com/somyang/servers/Somyang-1.21.3/fabricmods/required/sodium-fabric-0.6.5+mc1.21.3.jar",
+            "MD5": "1fb902912b3411b7f4f9be72be1c221c"
+          }
+        },
+        {
+          "id": "dev.tr7zw:waveycapes:1.4.13@jar",
+          "name": "WaveyCapes",
+          "type": "FabricMod",
+          "artifact": {
+            "size": 360416,
+            "url": "http://server.kimyoa.com/somyang/servers/Somyang-1.21.3/fabricmods/required/waveycapes-fabric-1.4.13-mc1.21.3.jar",
+            "MD5": "ed3f6a19d08b7c7eba8e7363316198df"
+          }
+        },
+        {
+          "id": "xaero.minimap:xaerominimap:24.7.1@jar",
+          "name": "Xaero's Minimap",
+          "type": "FabricMod",
+          "artifact": {
+            "size": 1642650,
+            "url": "http://server.kimyoa.com/somyang/servers/Somyang-1.21.3/fabricmods/optionalon/Xaeros_Minimap_24.7.1_Fabric_1.21.3.jar",
+            "MD5": "a33ef8121e063e764c0e5c62cdd90962"
+          },
+          "required": {
+            "value": false
+          }
+        },
+        {
+          "id": "xaero.map:xaeroworldmap:1.39.2@jar",
+          "name": "Xaero's World Map",
+          "type": "FabricMod",
+          "artifact": {
+            "size": 948958,
+            "url": "http://server.kimyoa.com/somyang/servers/Somyang-1.21.3/fabricmods/optionalon/XaerosWorldMap_1.39.2_Fabric_1.21.3.jar",
+            "MD5": "263c449f73927ff602413023384d4541"
+          },
+          "required": {
+            "value": false
+          }
+        },
+        {
+          "id": "dev.isxander.yacl3.platform:yet_another_config_lib_v3:3.6.2+1.21.2-fabric@jar",
+          "name": "YetAnotherConfigLib",
+          "type": "FabricMod",
+          "artifact": {
+            "size": 1108532,
+            "url": "http://server.kimyoa.com/somyang/servers/Somyang-1.21.3/fabricmods/required/YetAnotherConfigLib-3.6.2+1.21.2-fabric.jar",
+            "MD5": "0a457b78e57fbfbd724d668d2f5728fa"
+          }
+        },
+        {
+          "id": "generated.fabricmod:yosbr:0.1.2@jar",
+          "name": "YOSBR",
+          "type": "FabricMod",
+          "artifact": {
+            "size": 17373,
+            "url": "http://server.kimyoa.com/somyang/servers/Somyang-1.21.3/fabricmods/required/yosbr-0.1.2.jar",
+            "MD5": "9fcce225f25b6fd17921c87ff1c720f1"
+          }
+        },
+        {
+          "id": "dev.isxander:zoomify:2.14.2+1.21.3@jar",
+          "name": "Zoomify",
+          "type": "FabricMod",
+          "artifact": {
+            "size": 807977,
+            "url": "http://server.kimyoa.com/somyang/servers/Somyang-1.21.3/fabricmods/required/Zoomify-2.14.2+1.21.3.jar",
+            "MD5": "3b501d83e685e5cc6c7a2e339145434a"
+          }
+        },
+        {
+          "id": "chat_heads.json5",
+          "name": "chat_heads.json5",
+          "type": "File",
+          "artifact": {
+            "size": 186,
+            "url": "http://server.kimyoa.com/somyang/servers/Somyang-1.21.3/files/config/yosbr/config/chat_heads.json5",
+            "MD5": "ecef32a9526ebd6a89804df77edb0157",
+            "path": "config/yosbr/config/chat_heads.json5"
+          }
+        },
+        {
+          "id": "customwindowtitle-client.toml",
+          "name": "customwindowtitle-client.toml",
+          "type": "File",
+          "artifact": {
+            "size": 35,
+            "url": "http://server.kimyoa.com/somyang/servers/Somyang-1.21.3/files/config/yosbr/config/customwindowtitle-client.toml",
+            "MD5": "d5352bc0a256ef6e1002b203364da09c",
+            "path": "config/yosbr/config/customwindowtitle-client.toml"
+          }
+        },
+        {
+          "id": "fallingleaves.json",
+          "name": "fallingleaves.json",
+          "type": "File",
+          "artifact": {
+            "size": 1828,
+            "url": "http://server.kimyoa.com/somyang/servers/Somyang-1.21.3/files/config/yosbr/config/fallingleaves.json",
+            "MD5": "8c493feee771a977ef8acff840818aa6",
+            "path": "config/yosbr/config/fallingleaves.json"
+          }
+        },
+        {
+          "id": "ferritecore.mixin.properties",
+          "name": "ferritecore.mixin.properties",
+          "type": "File",
+          "artifact": {
+            "size": 1525,
+            "url": "http://server.kimyoa.com/somyang/servers/Somyang-1.21.3/files/config/yosbr/config/ferritecore.mixin.properties",
+            "MD5": "bf3e6be63e300b0290cfc849beb64ede",
+            "path": "config/yosbr/config/ferritecore.mixin.properties"
+          }
+        },
+        {
+          "id": "languagereload.json",
+          "name": "languagereload.json",
+          "type": "File",
+          "artifact": {
+            "size": 169,
+            "url": "http://server.kimyoa.com/somyang/servers/Somyang-1.21.3/files/config/yosbr/config/languagereload.json",
+            "MD5": "0a2e1e75445fb1ed002297e81b5ce204",
+            "path": "config/yosbr/config/languagereload.json"
+          }
+        },
+        {
+          "id": "sodium-extra-options.json",
+          "name": "sodium-extra-options.json",
+          "type": "File",
+          "artifact": {
+            "size": 1475,
+            "url": "http://server.kimyoa.com/somyang/servers/Somyang-1.21.3/files/config/yosbr/config/sodium-extra-options.json",
+            "MD5": "da4412c6387f24d95b489b6e0f0be4c2",
+            "path": "config/yosbr/config/sodium-extra-options.json"
+          }
+        },
+        {
+          "id": "sodium-extra.properties",
+          "name": "sodium-extra.properties",
+          "type": "File",
+          "artifact": {
+            "size": 360,
+            "url": "http://server.kimyoa.com/somyang/servers/Somyang-1.21.3/files/config/yosbr/config/sodium-extra.properties",
+            "MD5": "72b9d6dd6ada7b00ef334ee176054dbf",
+            "path": "config/yosbr/config/sodium-extra.properties"
+          }
+        },
+        {
+          "id": "sodium-mixins.properties",
+          "name": "sodium-mixins.properties",
+          "type": "File",
+          "artifact": {
+            "size": 265,
+            "url": "http://server.kimyoa.com/somyang/servers/Somyang-1.21.3/files/config/yosbr/config/sodium-mixins.properties",
+            "MD5": "456d99888369486f42d6ea7f70294170",
+            "path": "config/yosbr/config/sodium-mixins.properties"
+          }
+        },
+        {
+          "id": "sodium-options.json",
+          "name": "sodium-options.json",
+          "type": "File",
+          "artifact": {
+            "size": 632,
+            "url": "http://server.kimyoa.com/somyang/servers/Somyang-1.21.3/files/config/yosbr/config/sodium-options.json",
+            "MD5": "0526655acb6938560728d66ecb98fc90",
+            "path": "config/yosbr/config/sodium-options.json"
+          }
+        },
+        {
+          "id": "xaerominimap-common.txt",
+          "name": "xaerominimap-common.txt",
+          "type": "File",
+          "artifact": {
+            "size": 145,
+            "url": "http://server.kimyoa.com/somyang/servers/Somyang-1.21.3/files/config/yosbr/config/xaerominimap-common.txt",
+            "MD5": "c4bb2d96ebd8182b307ef6b2fda27370",
+            "path": "config/yosbr/config/xaerominimap-common.txt"
+          }
+        },
+        {
+          "id": "xaerominimap.txt",
+          "name": "xaerominimap.txt",
+          "type": "File",
+          "artifact": {
+            "size": 3640,
+            "url": "http://server.kimyoa.com/somyang/servers/Somyang-1.21.3/files/config/yosbr/config/xaerominimap.txt",
+            "MD5": "34daf6ed281f10d3aa9d1f916c51d7dc",
+            "path": "config/yosbr/config/xaerominimap.txt"
+          }
+        },
+        {
+          "id": "xaerominimap_entities.json",
+          "name": "xaerominimap_entities.json",
+          "type": "File",
+          "artifact": {
+            "size": 5531,
+            "url": "http://server.kimyoa.com/somyang/servers/Somyang-1.21.3/files/config/yosbr/config/xaerominimap_entities.json",
+            "MD5": "45843fe2251cec2e73f1115377be41d6",
+            "path": "config/yosbr/config/xaerominimap_entities.json"
+          }
+        },
+        {
+          "id": "xaeropatreon.txt",
+          "name": "xaeropatreon.txt",
+          "type": "File",
+          "artifact": {
+            "size": 0,
+            "url": "http://server.kimyoa.com/somyang/servers/Somyang-1.21.3/files/config/yosbr/config/xaeropatreon.txt",
+            "MD5": "d41d8cd98f00b204e9800998ecf8427e",
+            "path": "config/yosbr/config/xaeropatreon.txt"
+          }
+        },
+        {
+          "id": "xaeroworldmap-common.txt",
+          "name": "xaeroworldmap-common.txt",
+          "type": "File",
+          "artifact": {
+            "size": 120,
+            "url": "http://server.kimyoa.com/somyang/servers/Somyang-1.21.3/files/config/yosbr/config/xaeroworldmap-common.txt",
+            "MD5": "5a2200d083554257d61384f2c486162b",
+            "path": "config/yosbr/config/xaeroworldmap-common.txt"
+          }
+        },
+        {
+          "id": "xaeroworldmap.txt",
+          "name": "xaeroworldmap.txt",
+          "type": "File",
+          "artifact": {
+            "size": 1218,
+            "url": "http://server.kimyoa.com/somyang/servers/Somyang-1.21.3/files/config/yosbr/config/xaeroworldmap.txt",
+            "MD5": "61668053aa4dc58507cde11ed376502c",
+            "path": "config/yosbr/config/xaeroworldmap.txt"
+          }
+        },
+        {
+          "id": "zoomify.json",
+          "name": "zoomify.json",
+          "type": "File",
+          "artifact": {
+            "size": 714,
+            "url": "http://server.kimyoa.com/somyang/servers/Somyang-1.21.3/files/config/yosbr/config/zoomify.json",
+            "MD5": "56dae7d2f4ede2e76c76f570ea143727",
+            "path": "config/yosbr/config/zoomify.json"
+          }
+        },
+        {
+          "id": "options.txt",
+          "name": "options.txt",
+          "type": "File",
+          "artifact": {
+            "size": 668,
+            "url": "http://server.kimyoa.com/somyang/servers/Somyang-1.21.3/files/config/yosbr/options.txt",
+            "MD5": "db1c22adbc1c8ebcc511743f4c2f5c29",
+            "path": "config/yosbr/options.txt"
+          }
+        },
+        {
+          "id": "Mc둥근모.zip",
+          "name": "Mc둥근모.zip",
+          "type": "File",
+          "artifact": {
+            "size": 461187,
+            "url": "http://server.kimyoa.com/somyang/servers/Somyang-1.21.3/files/config/yosbr/resourcepacks/Mc%EB%91%A5%EA%B7%BC%EB%AA%A8.zip",
+            "MD5": "6ef17978d9de3a8654f6c23bb93361a4",
+            "path": "config/yosbr/resourcepacks/Mc둥근모.zip"
+          }
+        },
+        {
+          "id": "ComplementaryUnbound_r5.3.zip.txt",
+          "name": "ComplementaryUnbound_r5.3.zip.txt",
+          "type": "File",
+          "artifact": {
+            "size": 196,
+            "url": "http://server.kimyoa.com/somyang/servers/Somyang-1.21.3/files/config/yosbr/shaderpacks/ComplementaryUnbound_r5.3.zip.txt",
+            "MD5": "559d034bd709316381ff0efd28ea4efd",
+            "path": "config/yosbr/shaderpacks/ComplementaryUnbound_r5.3.zip.txt"
+          }
+        },
+        {
+          "id": "Pastel-Shaders-Universal-v1.200.zip.txt",
+          "name": "Pastel-Shaders-Universal-v1.200.zip.txt",
+          "type": "File",
+          "artifact": {
+            "size": 59,
+            "url": "http://server.kimyoa.com/somyang/servers/Somyang-1.21.3/files/config/yosbr/shaderpacks/Pastel-Shaders-Universal-v1.200.zip.txt",
+            "MD5": "eed9539940a7da5aecdacf82f8ae3297",
+            "path": "config/yosbr/shaderpacks/Pastel-Shaders-Universal-v1.200.zip.txt"
+          }
+        },
+        {
+          "id": "Solas Shader V2.3.zip.txt",
+          "name": "Solas Shader V2.3.zip.txt",
+          "type": "File",
+          "artifact": {
+            "size": 41,
+            "url": "http://server.kimyoa.com/somyang/servers/Somyang-1.21.3/files/config/yosbr/shaderpacks/Solas%20Shader%20V2.3.zip.txt",
+            "MD5": "0b590c5bd4c89c7377ae2247952a575d",
+            "path": "config/yosbr/shaderpacks/Solas Shader V2.3.zip.txt"
+          }
+        },
+        {
+          "id": "BSLOriginal_v8.3.zip",
+          "name": "BSLOriginal_v8.3.zip",
+          "type": "File",
+          "artifact": {
+            "size": 1101937,
+            "url": "http://server.kimyoa.com/somyang/servers/Somyang-1.21.3/files/shaderpacks/BSLOriginal_v8.3.zip",
+            "MD5": "44896d98f77f67c3f719b55ca1aa0d07",
+            "path": "shaderpacks/BSLOriginal_v8.3.zip"
+          }
+        },
+        {
+          "id": "ComplementaryUnbound_r5.3.zip",
+          "name": "ComplementaryUnbound_r5.3.zip",
+          "type": "File",
+          "artifact": {
+            "size": 446661,
+            "url": "http://server.kimyoa.com/somyang/servers/Somyang-1.21.3/files/shaderpacks/ComplementaryUnbound_r5.3.zip",
+            "MD5": "50893f00c06b63dfd140dbcac22cc69f",
+            "path": "shaderpacks/ComplementaryUnbound_r5.3.zip"
+          }
+        },
+        {
+          "id": "Pastel-Shaders-Universal-v1.200.zip",
+          "name": "Pastel-Shaders-Universal-v1.200.zip",
+          "type": "File",
+          "artifact": {
+            "size": 1023746,
+            "url": "http://server.kimyoa.com/somyang/servers/Somyang-1.21.3/files/shaderpacks/Pastel-Shaders-Universal-v1.200.zip",
+            "MD5": "f99b5764648634b39669bb25b6a8330c",
+            "path": "shaderpacks/Pastel-Shaders-Universal-v1.200.zip"
+          }
+        },
+        {
+          "id": "Solas Shader V2.3.zip",
+          "name": "Solas Shader V2.3.zip",
+          "type": "File",
+          "artifact": {
+            "size": 1244539,
+            "url": "http://server.kimyoa.com/somyang/servers/Somyang-1.21.3/files/shaderpacks/Solas%20Shader%20V2.3.zip",
+            "MD5": "3f132e37c38cf7f145ca5bc186fe2aff",
+            "path": "shaderpacks/Solas Shader V2.3.zip"
+          }
+        }
+      ]
+    }
+  ]
+}
